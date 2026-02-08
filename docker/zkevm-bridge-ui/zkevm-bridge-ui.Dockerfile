@@ -16,7 +16,7 @@ RUN patch -p1 -i deploy.sh.diff \
 
 
 # STEP 3: Build zkevm-bridge-ui image using the official Dockerfile.
-FROM nginx:alpine
+FROM nginx:1.29.5-alpine3.23
 LABEL author="devtools@polygon.technology"
 LABEL description="Enhanced zkevm-bridge-ui image with relative URLs support enabled"
 
